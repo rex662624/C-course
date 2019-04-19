@@ -1,0 +1,15 @@
+/*
+srand(time(NULL));
+unsigned int a,r; int i;
+for(i=0;i<50;i++){
+a=rand(); a=(a & 1) << 31; r=rand(); r = r | a;
+printf("%u ",r>>24);}
+//-------
+FILE *fptr;
+
+fptr=fopen("result.txt","wb");
+
+for(i=0;i<2000;i++)
+        {a=rand(); a=(a & 1) << 31; r=rand(); r = r | a;
+        fprintf(fptr, "%u\r\n",r);
+        }*/
